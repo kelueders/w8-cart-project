@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./bundle.js" defer></script>
+    <title>Corner Grocery</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Kate's Corner Grocery</p>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Sign Up</li>
+            <li>Sign In</li>
+        </ul>
+    </nav>
+    <header>
+        <p> Welcome to Marianos! Please log in below to access your shopping cart.</p>
+    </header>
+    <main>
+        <div class="login">
+            <form id="userForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age" value=""><br>
+                <input type="submit" id="signin" onclick="loginUser()" value="Submit">
+            </form>
+        </div>
+        <div class="welcome">
+            <!-- Welcome message goes here -->
+        </div>
+        <div class="shop">
+
+        </div>
+        <div class="cart-pic">
+            <!-- <img alt="cart" src="/images/cart.jpg" height="200" width="200"> -->
+        </div>
+        <div class="cart">
+            <!-- Print cart contents here -->
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
