@@ -35,6 +35,16 @@ export default class Item {
         return this._id;
     }
 
-    // itemElement
+    itemElement(item: Item): void {
+        const html = `<div id="${item.id}" class="item-card">
+                <ul>
+                    <li>${item.name}</li>
+                    <li>${item.description}</li>
+                    <li>${item.price}</li>
+                    <button class="button" onclick="addToCart(${item})">Add to Cart</button>
+                </ul>
+            </div>`
+        document.querySelector(".shop")?.insertAdjacentHTML("beforeend", html)
+    }
 
 }

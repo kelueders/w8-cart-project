@@ -89,10 +89,17 @@ export default class User {
         return newUser
     }
 
-    // cartHTMLElement(cart: Item[]): void {
-    //     cart.forEach(element) => {
+    cartHTMLElement(cart: Item[]): void {
+        cart.forEach(element => {
+            const html = `<div class='cart-display'>
+                <ul>
+                    <li>${element.name}</li>
+                    <li>${element.description}</li>
+                </ul>
+            </div>`
 
-    //     }
-    // }
+            document.querySelector(".cart")?.insertAdjacentHTML("beforeend", html)
+        })
+    }
     
 }

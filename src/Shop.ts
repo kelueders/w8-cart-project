@@ -3,11 +3,13 @@ import {v4 as uuidv4} from "uuid";
 
 // INTERNAL IMPORTS
 import Item from './Item';
+import User from './User';
 
 export default class Shop {
 
     private _id: string = uuidv4();
     private _stock: Item[] = [];
+    private myUser: User | undefined;
 
     constructor(
         private _name: string
@@ -37,4 +39,18 @@ export default class Shop {
     public addToStock(item: Item): void {
         this.stock.push(item);
     }
+
+    showItems(stock: Item[]): void {
+        stock.forEach(element => {
+            itemElement(element)
+        }) 
+    }
+
+    updateCart()
+
+    static loginUser(event): void {
+        showItems()
+        updateCart()
+    }
+    
 }
