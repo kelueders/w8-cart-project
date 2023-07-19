@@ -9,7 +9,7 @@ export default class Shop {
 
     private _id: string = uuidv4();
     private _stock: Item[] = [];
-    private myUser: User | undefined;
+    private _newUser: User | undefined = User.loginUser();
 
     constructor(
         private _name: string
@@ -42,15 +42,15 @@ export default class Shop {
 
     showItems(stock: Item[]): void {
         stock.forEach(element => {
-            itemElement(element)
+            element.itemElement(element)
         }) 
     }
 
-    updateCart()
+    // updateCart()
 
-    static loginUser(event): void {
-        showItems()
-        updateCart()
-    }
+    // static loginUser(event): void {
+    //     showItems()
+    //     updateCart()
+    // }
     
 }

@@ -1,12 +1,23 @@
 body {
     background-color: rgb(124, 70, 68);
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(255,0,0,.7)), url(/images/produce2.jpg);
+    background-image: linear-gradient(rgba(7, 7, 7, 0.5),rgba(122, 126, 122, 0.5)),url("/images/produce2.jpg");
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
+}
+
+header, main {
+    color:#f0e8e7;
+    padding-left: 50px;
+}
+
+.shop {
+    background-color: rgb(36, 34, 31);
+    /* background-image: linear-gradient(rgba(15, 0, 0, 0.3),rgba(15, 0, 0, 0.2)); */
+    width: 25%;
+    padding: 10px;
 }
 
 nav {
@@ -20,13 +31,13 @@ nav {
     color: rgb(230, 172, 56);
 }
 
-ul {
+nav ul {
     list-style: none; 
     background-color: black;
     color: rgb(211, 154, 154)
 }
 
-li {
+nav li {
     display: inline;
     padding: 20px;
 }

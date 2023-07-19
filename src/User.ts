@@ -84,8 +84,12 @@ export default class User {
         console.log('')
     }
 
-    static loginUser(name: string, age: number): User {
-        const newUser = new User(name, age)
+    static loginUser(): User {
+        const name: HTMLInputElement | null = document.querySelector("#name");
+        const age: HTMLInputElement | null = document.querySelector("#age");
+        console.log(name?.value, age?.value);
+    
+        const newUser: User = new User(String(name?.value), Number(age?.value));
         return newUser
     }
 

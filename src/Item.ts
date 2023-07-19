@@ -40,8 +40,8 @@ export default class Item {
                 <ul>
                     <li>${item.name}</li>
                     <li>${item.description}</li>
-                    <li>${item.price}</li>
-                    <button class="button" onclick="addToCart(${item})">Add to Cart</button>
+                    <li>$${item.price}</li>
+                    <button class="add-button" onclick="addToCart(${item})">Add to Cart</button>
                 </ul>
             </div>`
         document.querySelector(".shop")?.insertAdjacentHTML("beforeend", html)
